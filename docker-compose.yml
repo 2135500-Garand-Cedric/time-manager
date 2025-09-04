@@ -1,0 +1,11 @@
+
+
+services:
+  time-managers:
+    build: .
+    container_name: time-manager
+    ports:
+      - "8080:80"
+    volumes:
+      - /mnt/c/Users/cedri/Desktop/Websites/time-manager:/var/www/html
+    user: root
