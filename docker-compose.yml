@@ -9,7 +9,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - /home/cedri/websites/time-manager/src:/var/www/html
+      - /home/cedri/websites/time-manager:/var/www/html
     user: root
   db:
     image: mysql:8.0

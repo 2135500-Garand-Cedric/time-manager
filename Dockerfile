@@ -8,7 +8,7 @@ RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 RUN a2enmod rewrite
 
 # Copy project files into the container
-COPY ./src /var/www/html/
+COPY . /var/www/html/
 
 # Set working directory
 WORKDIR /var/www/html

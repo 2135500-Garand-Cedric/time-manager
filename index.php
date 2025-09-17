@@ -3,7 +3,7 @@ session_start();
 
 // If the user is already logged in, redirect to app
 if (isset($_COOKIE['tm_auth']) && $_COOKIE['tm_auth'] === getenv('APP_SECRET')) {
-    header("Location: app.php");
+    header("Location: app");
     exit;
 }
 
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         setcookie('tm_auth', $inputCode, time() + (365 * 24 * 60 * 60), "/", "", false, true);
 
         // Redirect to app
-        header("Location: app.php");
+        header("Location: app");
         exit;
     } else {
         $error = "Invalid code. Please try again.";

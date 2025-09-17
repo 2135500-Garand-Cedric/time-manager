@@ -37,6 +37,12 @@ if ($recordRes->num_rows > 0) {
 <link rel="stylesheet" href="styles.css">
 </head>
 <body class="app-body">
+    <!-- Top-right button -->
+    <div class="top-right-button">
+        <a href="edit_records">
+            <button type="button">Edit Past Activities</button>
+        </a>
+    </div>
     <div class="app-container">
 
         <?php if ($currentActivity): ?>
